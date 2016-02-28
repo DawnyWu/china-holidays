@@ -1,9 +1,54 @@
 # China Holidays
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/china/holidays`. To experiment with that code, run `bin/console` for an interactive prompt.
+Add `holiday?` instance method to Rails Date and Time class
 
-TODO: Delete this and the text above, and describe your gem
+## Usage
 
+```ruby
+# Date instance method
+"2016-01-01".to_date.holiday? # true
+
+# Time instance method 
+"2016-01-01 20:11:12 +0800".to_time.holiday? # true
+```
+
+** You can change holidays in `holidays.json` file **
+```json
+{
+  "holidays": [
+    "2016-01-01",// 元旦
+    "2016-01-02",
+    "2016-01-03",
+    "2016-02-07",// 春节
+    "2016-02-08",
+    "2016-02-09",
+    "2016-02-10",
+    "2016-02-11",
+    "2016-02-12",
+    "2016-02-13",
+    "2016-04-02",// 清明节
+    "2016-04-03",
+    "2016-04-04",
+    "2016-04-30",// 劳动节
+    "2016-05-01",
+    "2016-05-02",
+    "2016-06-09",// 端午节
+    "2016-06-10",
+    "2016-06-11",
+    "2016-09-15",// 中秋节
+    "2016-09-16",
+    "2016-09-17",
+    "2016-10-01",// 国庆节
+    "2016-10-02",
+    "2016-10-03",
+    "2016-10-04",
+    "2016-10-05",
+    "2016-10-06",
+    "2016-10-07",
+    "2016-02-28"
+  ]
+}
+```
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,17 +65,7 @@ Or install it yourself as:
 
     $ gem install china-holidays
 
-## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/china-holidays.
+## License
+MIT
 
