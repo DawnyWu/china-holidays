@@ -12,9 +12,9 @@ Add `holiday?` instance method to Rails Date and Time class
 "2016-01-01 20:11:12 +0800".to_time.holiday? # true
 ```
 
-** You can change holidays in `holidays.json` file **
-```json
-{
+#### You can change holidays in `holidays.json` file
+```bash
+ {
   "holidays": [
     "2016-01-01",// 元旦
     "2016-01-02",
