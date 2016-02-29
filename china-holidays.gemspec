@@ -6,12 +6,12 @@ require 'china/holidays/version'
 Gem::Specification.new do |spec|
   spec.name          = "china-holidays"
   spec.version       = China::Holidays::VERSION
-  spec.authors       = ["Wu"]
-  spec.email         = ["wuzhaoyang@meizu.com"]
+  spec.authors       = ["DawnyWu"]
+  spec.email         = ["wuzhaoyang@gmail.com"]
 
-  spec.summary       = "test" 
-  spec.description   = "test"
-  spec.homepage      = "http://baidu.com"
+  spec.summary       = "A gem contains 2016 china holidays" 
+  spec.description   = "A gem contains 2016 china holidays"
+  spec.homepage      = "https://github.com/DawnyWu/china-holidays"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
